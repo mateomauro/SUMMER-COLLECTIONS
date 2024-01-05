@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.container {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    /* Añade esta línea */
+    display: none;
+}
+
+/* navigation */
+.header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 30%;
+    height: 100%;
+}
+
+.icons {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons svg {
+    cursor: pointer;
+}
+
+.navegations-A {
+    display: none;
+}
+
+/* sneakersSection */
+
+.sneakersSection {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.circle {
+    border-radius: 100%;
+    background: linear-gradient(180deg, rgba(233, 1, 37, 0.75) 0%, rgba(244, 99, 121, 0.00) 56.77%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.summer {
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 45px */
+    letter-spacing: 22.5px;
+    position: absolute;
+    top: 12%;
+}
+
+.collections {
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100%;
+    /* 80px */
+    position: absolute;
+    top: 19%;
+}
+
+.Jordan {
+    position: absolute;
+    top: 29%;
+    display: block;
+}
+
+.JordanBig {
+    display: none;
+}
+
+.options {
+    position: absolute;
+    bottom: 16%;
+    display: flex;
+    align-items: center;
+}
+
+.options2 {
+    display: none
+}
+
+.options svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btnBuy {
+    display: flex;
+    width: 165px;
+    height: 35px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: linear-gradient(267deg, #F46379 0%, #E90125 100%);
+    box-shadow: 0px 4px 40px 0px rgba(53, 130, 245, 0.24);
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 18px */
+    font-family: 'Poppins', sans-serif;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.btnAdd {
+    display: flex;
+    width: 165px;
+    height: 35px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #1B1E28;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 18px */
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.choose {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose p {
+    margin: 0 10px;
+    color: #1B1E28;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 16px */
+    text-transform: uppercase;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.choose svg {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.leg {
+    display: none;
+}
+
+.circle-blur {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .summer {
+        color: #FFF !important;
+    }
+}
+
+
+@media (min-width: 700px) {
+
+    .collections {
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-size: 100px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 100%;
+        /* 150px */
+        top: 3%;
+    }
+
+    .summer {
+        color: #E90125;
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        /* 45px */
+        letter-spacing: 22.5px;
+        top: -13%;
+    }
+
+    .choose {
+        height: 10%;
+    }
+
+    .sneakersSection {
+        justify-content: center;
+    }
+
+    .options {
+        position: absolute;
+        top: 0;
+        right: -20%;
+        bottom: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .options svg {
+        margin: 5px 0;
+    }
+
+    .navegations-A {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegations-A p {
+        color: #1B1E28;
+        font-family: Barlow Condensed;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .icons {
+        width: 8%;
+    }
+
+    .icons svg:last-child {
+        display: none;
+    }
+
+    .logo {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 900px) {
+    .leg {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        filter: blur(7px);
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .circle-blur {
+        position: absolute;
+        right: -250px;
+        bottom: -250px;
+        display: block;
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+        background: radial-gradient(45.48% 50% at 50% 50%, rgba(233, 1, 37, 0.50) 0%, rgba(217, 217, 217, 0.00) 100%);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.transitionBackground {
+    transition: background 0.5s ease-in;
+}
+
+.fade {
+    transition: opacity 1s ease;
+}
+
+.transition-fill {
+    transition: fill 0.5s ease;
+}
+
+
+.transition-color {
+    transition: color 0.5s ease;
+}
+
+.transition-background-shadow {
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden !important;
+}
+
+
+/* NIKE */
+
+
+.loading svg {
+    width: 660px;
+}
+
+
+@keyframes filling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.border-nike {
+    background-color: #E90125;
+    stroke: black;
+    z-index: 10;
+    position: relative;
+}
+
+.fill-nike {
+    position: relative;
+    z-index: 5;
+}
+
+.fill-white-nike {
+    width: 660px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    z-index: 7;
+    animation: filling 5s forwards;
+}
+
+.svg-fill-nike {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+}
+
+.svg-border-nike {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
