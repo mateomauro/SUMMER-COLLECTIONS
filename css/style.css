@@ -229,14 +229,48 @@ body {
     display: none;
 }
 
+
+.loading svg {
+    width: 243px;
+    height: 88px;
+}
+
+.fill-white-nike {
+    width: 243px;
+    height: 88px;
+}
+
 @media (max-width: 700px) {
     .summer {
         color: #FFF !important;
     }
 }
 
+@media (min-width: 500px) {
+
+    .loading svg {
+        width: 324px;
+        height: 113px;
+    }
+
+    .fill-white-nike {
+        width: 324px;
+        height: 113px;
+    }
+
+}
 
 @media (min-width: 700px) {
+
+    .loading svg {
+        width: 405px;
+        height: 142px;
+    }
+
+    .fill-white-nike {
+        width: 405px;
+        height: 142px;
+    }
 
     .collections {
         text-align: center;
@@ -318,6 +352,17 @@ body {
 }
 
 @media (min-width: 900px) {
+
+    .loading svg {
+        width: 660px;
+        height: 230px;
+    }
+
+    .fill-white-nike {
+        width: 660px;
+        height: 230px;
+    }
+
     .leg {
         display: block;
         position: absolute;
@@ -392,10 +437,6 @@ body {
 /* NIKE */
 
 
-.loading svg {
-    width: 660px;
-}
-
 
 @keyframes filling {
     0% {
@@ -420,8 +461,6 @@ body {
 }
 
 .fill-white-nike {
-    width: 660px;
-    height: 230px;
     position: absolute;
     top: 0;
     left: 0;
