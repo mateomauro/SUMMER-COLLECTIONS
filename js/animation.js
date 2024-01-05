@@ -171,32 +171,38 @@ setTimeout(function () {
 let startTouchPositionX;
 let endTouchPositionX;
 
-// Selecciona el carrusel
-let carousel = document.querySelector('.sneakersSection');
-
-// Agrega el evento touchstart al carrusel
-carousel.addEventListener('touchstart', function (event) {
+// Agrega el evento touchstart al círculo
+circle.addEventListener('touchstart', function (event) {
     // Almacena la posición X del toque inicial
     startTouchPositionX = event.touches[0].clientX;
 }, false);
 
-// Agrega el evento touchmove al carrusel
-carousel.addEventListener('touchmove', function (event) {
+// Agrega el evento touchmove al círculo
+circle.addEventListener('touchmove', function (event) {
     // Almacena la posición X del toque final
     endTouchPositionX = event.touches[0].clientX;
+    console.log("hola")
 }, false);
 
-// Agrega el evento touchend al carrusel
-carousel.addEventListener('touchend', function (event) {
+// Agrega el evento touchend al círculo
+circle.addEventListener('touchend', function (event) {
     // Calcula la diferencia entre el toque inicial y final
     let difference = startTouchPositionX - endTouchPositionX;
 
+    console.log(difference)
     // Si la diferencia es negativa, el usuario deslizó hacia la izquierda
     if (difference < 0) {
-        // Aquí puedes llamar a la función que mueve el carrusel a la izquierda
+        if (counter > 1) {
+            counter--
+            change()
+        }
     }
     // Si la diferencia es positiva, el usuario deslizó hacia la derecha
     else if (difference > 0) {
-        // Aquí puedes llamar a la función que mueve el carrusel a la derecha
+        console.log("derecha")
+        if (counter < 3) {
+            counter++
+            change()
+        }
     }
 }, false);
