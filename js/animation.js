@@ -190,19 +190,23 @@ circle.addEventListener('touchend', function (event) {
     let difference = startTouchPositionX - endTouchPositionX;
 
     console.log(difference)
-    // Si la diferencia es negativa, el usuario deslizó hacia la izquierda
-    if (difference < 0) {
-        if (counter > 1) {
-            counter--
-            change()
+    // Comprueba si la diferencia (en valor absoluto) es mayor que 50
+    if (Math.abs(difference) > 60) {
+        // Si la diferencia es negativa, el usuario deslizó hacia la izquierda
+        if (difference < 0) {
+            if (counter > 1) {
+                counter--
+                change()
+            }
         }
-    }
-    // Si la diferencia es positiva, el usuario deslizó hacia la derecha
-    else if (difference > 0) {
-        console.log("derecha")
-        if (counter < 3) {
-            counter++
-            change()
+        // Si la diferencia es positiva, el usuario deslizó hacia la derecha
+        else if (difference > 0) {
+            console.log("derecha")
+            if (counter < 3) {
+                counter++
+                change()
+            }
         }
     }
 }, false);
+
